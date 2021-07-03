@@ -1,0 +1,81 @@
+<div>
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+        <div class="form-group">
+          <label for="surname">Surname</label>
+          <input
+            type="text"
+            class="form-control"
+            id="surname"
+            required
+            [(ngModel)]="contact.surname"
+            name="surname"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            class="form-control"
+            id="name"
+            required
+            [(ngModel)]="contact.name"
+            name="name"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="phone_number">Phone Number</label>
+          <input
+            class="form-control"
+            id="phone_number"
+            required
+            [(ngModel)]="contact.phone_number"
+            name="phone_number"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input
+            class="form-control"
+            id="address"
+            required
+            [(ngModel)]="contact.address"
+            name="address"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="geo_data">Geo Data (Lat/Lon)</label>
+          <input
+            class="form-control"
+            id="geo_data"
+            required
+            [(ngModel)]="contact.geo_data"
+            name="geo_data"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="other_info">Other Info</label>
+          <input
+            class="form-control"
+            id="other_info"
+            required
+            [(ngModel)]="contact.other_info"
+            name="other_info"
+          />
+        </div>
+  
+  
+        <button (click)="saveContact()" class="btn btn-success">Add</button>
+      </div>
+  
+      <div *ngIf="submitted">
+        <h4>The contact was added successfully!</h4>
+        <button class="btn btn-success" (click)="newContact()">Return</button>
+      </div>
+    </div>
+  </div>
+  

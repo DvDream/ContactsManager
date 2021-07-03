@@ -1,0 +1,75 @@
+<div class="list row">
+    <div class="col-md-8">
+      <div class="input-group mb-3">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Search by surname, name, phone number..."
+          [(ngModel)]="keyword"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            (click)="searchKeyword()"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h4>Contacts List</h4>
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let contact of contacts; let i = index"
+          [class.active]="i == currentIndex"
+          (click)="setActiveContact(contact, i)"
+        >
+           {{ contact.name}} {{ contact.surname }}
+        </li>
+      </ul>
+  
+      <button class="m-3 btn btn-sm btn-danger" (click)="removeAllContacts()">
+        Remove All
+      </button>
+    </div>
+    <div class="col-md-6">
+      <div *ngIf="currentContact.id">
+        <h4>Contact</h4>
+        <div>
+          <label><strong>Surname:</strong></label> {{ currentContact.surname }}
+        </div>
+        <div>
+          <label><strong>Name:</strong></label>
+          {{ currentContact.name }}
+        </div>
+        <div>
+          <label><strong>Phone number:</strong></label>
+          {{ currentContact.phone_number }}
+        </div>
+        <div>
+          <label><strong>Address:</strong></label>
+          {{ currentContact.address }}
+        </div>
+        <div>
+          <label><strong>Geo Position(Lat/Lon):</strong></label>
+          {{ currentContact.geo_data }}
+        </div>
+        <div>
+          <label><strong>Other Info:</strong></label>
+          {{ currentContact.other_info }}
+        </div>
+        <a class="badge bg-warning text-dark" routerLink="/contacts/{{ currentContact.id }}">
+          Edit
+        </a>
+      </div>
+  
+      <div *ngIf="!currentContact">
+        <br/>
+        <p>Please click on a Contact...</p>
+      </div>
+    </div>
+  </div>
+  
