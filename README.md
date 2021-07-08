@@ -7,7 +7,7 @@ The purpose of this project is to create a simple web application for a contact 
 The used tools are:
 * AngularJS 12.1.0 for the Frontend part;
 * Spring Boot 2.5.2 for the Backend part;
-* MySQL Workbench for the Database part;
+* MySQL for the Database part;
 
 ## Setting up the Database
 
