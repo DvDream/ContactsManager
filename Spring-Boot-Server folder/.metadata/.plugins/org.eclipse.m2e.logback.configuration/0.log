@@ -575,3 +575,10 @@
 2021-07-03 09:33:47,459 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2021-07-03 09:33:47,462 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-07-03 09:33:47,462 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Davide Mori\Desktop\Progetto_AREA\Server\src\test\resources
+2021-07-05 08:29:30,048 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-07-05 08:32:17,916 [Worker-6: Launching Server - SpringBootDataJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-05 08:32:17,928 [Worker-6: Launching Server - SpringBootDataJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-07-05 08:32:18,020 [Worker-6: Launching Server - SpringBootDataJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-05 08:32:18,026 [Worker-6: Launching Server - SpringBootDataJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-05 08:32:18,027 [Worker-6: Launching Server - SpringBootDataJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Davide Mori\Desktop\AngularContactsManager\Spring-Boot-Server folder\Server\src\test\resources
+2021-07-06 18:53:21,555 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

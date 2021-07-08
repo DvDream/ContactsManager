@@ -27,6 +27,11 @@ export class AddContactComponent implements OnInit {
   }
 
   saveContact(): void {
+
+    if(!this.contact.phone_number){
+      alert('Please add a number!');
+      return;
+    }
     const data = {
       surname: this.contact.surname,
       name: this.contact.name,
